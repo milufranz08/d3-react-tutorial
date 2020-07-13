@@ -31,7 +31,9 @@ function App() {
 
   return (
     <div className="App">
-      {data.map(([x, y], index) => (<div key={index}>{`${index + 1}) x: ${x} y: ${y}`}</div>)) }
+      <svg viewBox="0 0 100 100">
+        {data.map(([x, y], index) => (<circle cx={x} cy={y} r="1" fill="purple"/>)) }
+      </svg>
     </div>
   );
 }
