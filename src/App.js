@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      {data.map(([x, y], index) => (<div key={index}>{`${index}) x: ${x} y: ${y}`}</div>)) }
+      {data.map(([x, y], index) => (<div key={index}>{`${index + 1}) x: ${x} y: ${y}`}</div>)) }
     </div>
   );
 }
