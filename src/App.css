@@ -1,5 +1,6 @@
 .App {
   line-height: 2;
+  font-size: 0;
   width: 100vw;
   height: 100vh;
 }

@@ -1,18 +1,32 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo } from 'react';
 import * as d3 from 'd3';
 
-function Axis({ width }) {
+function Axis({ domain, range, width }) {
 
     const ticks = useMemo(() => {
         const xScale = d3.scaleLinear()
-          .domain([0, 100])
-          .range([10, 980])
-        return xScale.ticks()
+          .domain(domain)
+          .range(range)
+
+        const scaleWidth = range[1] - range[0];
+        const pixelsPerTick = 30;
+        const numberOfTicksTarget = Math.max(
+            1,
+            Math.floor(
+                scaleWidth / pixelsPerTick
+            )
+          );
+
+        return xScale.ticks(numberOfTicksTarget)
           .map(value => ({
             value,
             xOffset: xScale(value)
           }))
-      }, []);
+      }, [
+        domain.join("-"),
+        range.join("-")
+      ]);
 
     return (
         <svg 
@@ -21,7 +35,13 @@ function Axis({ width }) {
             height="40"
         >
             <path
-                d="M 9.5 0.5 H 980.5"
+                d={[
+                    "M", range[0], 6,
+                    "v", -6,
+                    "H", range[1],
+                    "v", 6,
+                    ].join(" ")}
+                fill="none"
                 stroke="currentColor"
             />
             {ticks.map(({ value, xOffset }) => (
@@ -43,7 +63,7 @@ function Axis({ width }) {
                     { value }
                     </text>
                 </g>
-                ))}
+            ))}
         </svg>
     )
 }

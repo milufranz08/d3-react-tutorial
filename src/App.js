@@ -5,25 +5,6 @@ import Axis from './Axis';
 import { generateData } from './helper';
 import './App.css';
 
-// custom hook that runs some logic every certain time
-const useInterval = (callback, delay) => {
-  const savedCallback = useRef();
-
-  useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    const tick = () => {
-      savedCallback.current();
-    }
-    if (delay !== null) {
-      let id = setInterval(tick, delay);
-      return () => clearInterval(id);
-    }
-  }, [delay]);
-};
-
 // custom hook to watch for browser window resize
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
@@ -40,28 +21,15 @@ const useWindowSize = () => {
 
 function App() {
   const [data, setData] = useState();
-  const [isAnimated, setIsAnimated] = useState(false);
   const ref = useRef();
   const [width, height] = useWindowSize();
 
   useEffect(() => {
-    setIsAnimated(!isAnimated);
-  }, [data]);
-
-  useInterval(() => {
     if (width && height) {
-      const newData = generateData(width, height);
+      const newData = generateData(width -10, height - 40);
       setData(newData);
     }
-  }, 2000)
-
-  const style = useSpring({
-    config: {
-      duration: 2000,
-    },
-    r: isAnimated ? width/100 * 8 : 0,
-    opacity: isAnimated ? 1 : 0,
-  });
+  }, [width]);
 
   return (
     <div className="App" ref={ref}>
@@ -74,15 +42,16 @@ function App() {
             overflow="auto"
           >
             {data.map(([x, y], index) => (
-              <animated.circle {...style} 
+              <animated.circle 
                 key={index}
                 cx={x} 
                 cy={y} 
-                fill={isAnimated ? "#5900b3" : "#76eb00"} 
+                r={width/100 * 0.5}
+                fill="#5900b3"
               />
             ))}
           </svg>
-          <Axis width={width}/>
+          <Axis domain={[0, 100]} range={[10, width - 10]} width={width}/>
         </>
       )}
     </div>
