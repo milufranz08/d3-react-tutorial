@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { animated, useSpring } from "react-spring";
+import Axis from './Axis';
 import { generateData } from './helper';
 import './App.css';
 
@@ -65,21 +66,24 @@ function App() {
   return (
     <div className="App" ref={ref}>
       { width && height && data && (
-        <svg 
-          viewBox={`0 0 ${width} ${height}`}
-          width={width}
-          height={height}
-          overflow="auto"
-        >
-          {data.map(([x, y], index) => (
-            <animated.circle {...style} 
-              key={index}
-              cx={x} 
-              cy={y} 
-              fill={isAnimated ? "#5900b3" : "#76eb00"} 
-            />
-          ))}
-        </svg>
+        <>
+          <svg 
+            viewBox={`0 0 ${width} ${height - 40}`}
+            width={width}
+            height={height - 40}
+            overflow="auto"
+          >
+            {data.map(([x, y], index) => (
+              <animated.circle {...style} 
+                key={index}
+                cx={x} 
+                cy={y} 
+                fill={isAnimated ? "#5900b3" : "#76eb00"} 
+              />
+            ))}
+          </svg>
+          <Axis width={width}/>
+        </>
       )}
     </div>
   );
