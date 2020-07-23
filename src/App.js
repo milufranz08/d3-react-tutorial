@@ -27,12 +27,14 @@ function App() {
   useInterval(() => {
     const newData = generateData()
     setData(newData)
-  }, 2000)
+  }, 2000);
 
   return (
     <div className="App">
       <svg viewBox="0 0 100 100">
-        {data.map(([x, y], index) => (<circle cx={x} cy={y} r="1" fill="purple"/>)) }
+        {data.map(([x, y], index) => (
+          <circle key={index} cx={x} cy={y} r="1" fill="purple"/>
+        ))}
       </svg>
     </div>
   );
