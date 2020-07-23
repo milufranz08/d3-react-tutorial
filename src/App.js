@@ -34,7 +34,7 @@ function App() {
   useInterval(() => {
     const newData = generateData();
     setData(newData);
-  }, 2000)
+  }, 2000);
 
   const style = useSpring({
     config: {
