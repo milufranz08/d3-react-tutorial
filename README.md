@@ -81,9 +81,8 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
     <img src="readme_assets/presenters_images.png" />
 </p>
 
-<style>.table-styles table { border: 0; background-color: transparent; margin: 0 auto;  }</style>
 
-<table border="0" class="table-styles">
+<table border="0" width=100% align="center">
  <tr>
     <td><b style="font-size:24px; padding-right:1em"></b></td>
     <td><b style="font-size:24px; padding-right:1em">Ren Estep</b></td>
