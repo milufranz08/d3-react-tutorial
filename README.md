@@ -60,7 +60,7 @@ As an example, let's switch to **00-clean-start** branch:
 
 ## About Imagine Dat
 
-<p align="center">
+<p align="center" style="padding: 1em;">
     <img src="readme_assets/imagine.dat_logo.png" />
 </p>
 
@@ -82,7 +82,7 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
 </p>
 
 
-<table border="0">
+<table border="0" style="margin: 0 auto; border: 0; background-color: transparent;">
  <tr>
     <td><b style="font-size:24px; padding-right:1em"></b></td>
     <td><b style="font-size:24px; padding-right:1em">Ren Estep</b></td>
@@ -90,11 +90,11 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
  </tr>
  <tr>
     <td>
-        <p style="font-weight: bold">Site:</p>
-        <p style="font-weight: bold">Dev:</p>
-        <p style="font-weight: bold">Twitter:</p>
-        <p style="font-weight: bold">Github:</p>
-        <p style="font-weight: bold">Codepen:</p>
+        <p style="font-weight: bold;">Site:</p>
+        <p style="font-weight: bold;">Dev:</p>
+        <p style="font-weight: bold;">Twitter:</p>
+        <p style="font-weight: bold;">Github:</p>
+        <p style="font-weight: bold;">Codepen:</p>
     </td>
     <td>
         <p><a href="http://renestep.com/">renestep.com</a></p>
