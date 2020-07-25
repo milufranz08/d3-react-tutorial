@@ -61,7 +61,7 @@ As an example, let's switch to **00-clean-start** branch:
 ## About Imagine Dat
 
 <p align="center" style="padding: 1em;">
-    <img src="readme_assets/imagine.dat_logo.png" />
+    <img src="readme_assets/imagine_data_logo.png" />
 </p>
 
 This free, online workshop was hosted by [Imagine Dat](http://www.imagine-dat.com/). 
@@ -81,8 +81,9 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
     <img src="readme_assets/presenters_images.png" />
 </p>
 
+<style>.table-styles table { border: 0; background-color: transparent; margin: 0 autol  }</style>
 
-<table border="0" style="margin: 0 auto; border: 0; background-color: transparent;">
+<table border="0" class="table-styles">
  <tr>
     <td><b style="font-size:24px; padding-right:1em"></b></td>
     <td><b style="font-size:24px; padding-right:1em">Ren Estep</b></td>
