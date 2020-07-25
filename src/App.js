@@ -4,25 +4,6 @@ import { animated, useSpring } from "react-spring";
 import { generateData } from './helper';
 import './App.css';
 
-// custom hook that runs some logic every certain time
-const useInterval = (callback, delay) => {
-  const savedCallback = useRef();
-
-  useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    const tick = () => {
-      savedCallback.current();
-    }
-    if (delay !== null) {
-      let id = setInterval(tick, delay);
-      return () => clearInterval(id);
-    }
-  }, [delay]);
-};
-
 // custom hook to watch for browser window resize
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
@@ -47,12 +28,15 @@ function App() {
     setIsAnimated(!isAnimated);
   }, [data]);
 
-  useInterval(() => {
-    if (width && height) {
-      const newData = generateData(width, height);
-      setData(newData);
-    }
-  }, 2000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (width && height) {
+        const newData = generateData(width, height);
+        setData(newData);
+      }
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [width, height]);
 
   const style = useSpring({
     config: {
