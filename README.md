@@ -81,7 +81,7 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
     <img src="readme_assets/presenters_images.png" />
 </p>
 
-<style>.table-styles table { border: 0; background-color: transparent; margin: 0 autol  }</style>
+<style>.table-styles table { border: 0; background-color: transparent; margin: 0 auto;  }</style>
 
 <table border="0" class="table-styles">
  <tr>
