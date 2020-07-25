@@ -41,7 +41,11 @@ This project has been structured with multiple branches so you are able to follo
 
 By default you are going to be in the `master` branch, which will contain the final product. 
 
-To start following along switch to the different branches using the `git checkout` command followed by the `branch-name`.
+To start following along switch to the different branches by fetching them:
+
+`git fetch`
+
+and then using the `git checkout` command followed by the `branch-name`.
 
 As an example, let's switch to **00-clean-start** branch:
 
