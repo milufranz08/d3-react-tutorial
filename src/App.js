@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { animated, useSpring } from "react-spring";
+import { animated } from "react-spring";
 import Axis from './Axis';
 import { generateData } from './helper';
 import './App.css';
