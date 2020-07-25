@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="readme_assets/d3-react-workshop-title.png" />
+</p>
+
 # D3 + React Workshop
 
 Data visualization is not just a graph or a chart, but the experimentation of different media to curate and display a collection of data. D3 is a powerful and flexible tool that allows you to create complex and imaginative representations. React, on the other hand, is a JavaScript library that helps you build user interfaces. D3 combined with React opens a lot of possibilities when creating an interactive web application, however, these two technologies are not easily combined as they both handle the DOM.
@@ -55,6 +59,11 @@ As an example, let's switch to **00-clean-start** branch:
 ---
 
 ## About Imagine Dat
+
+<p align="center">
+    <img src="readme_assets/imagine.dat_logo.png" />
+</p>
+
 This free, online workshop was hosted by [Imagine Dat](http://www.imagine-dat.com/). 
 
 We are a group of creative visualizers of collected data! If you enjoy presenting data in a creative and impassioned way, you are in the right place. We host community events to share our work, discuss our ideas, teach others new skills, and network with other members of the tech community.
@@ -68,16 +77,38 @@ Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to kee
 
 ### Presenters
 
-- #### Ren Estep
-    - **Site:** [renestep.com](http://renestep.com/)
-    - **Dev:** [@stories_of_ren](https://dev.to/stories_of_ren)
-    - **Twitter:** [@stories_of_ren](https://twitter.com/stories_of_ren)
-    - **Github:** [nrenc027](https://github.com/nrenc027)
-    - **Codepen:** []()
+<p align="center">
+    <img src="readme_assets/presenters_images.png" />
+</p>
 
-- #### Milu Franz
-    - **Site:** [milufranz.com](http://milufranz.com/)
-    - **Dev:** [@milu_franz](https://dev.to/milu_franz)
-    - **Twitter:** [@milu_franz](https://twitter.com/milu_franz)
-    - **Github:** [milufranz08](https://github.com/milufranz08)
-    - **Codepen:** [@Milu5489](https://codepen.io/Milu5489)
+
+<table border="0">
+ <tr>
+    <td><b style="font-size:24px; padding-right:1em"></b></td>
+    <td><b style="font-size:24px; padding-right:1em">Ren Estep</b></td>
+    <td><b style="font-size:24px">Milu Franz</b></td>
+ </tr>
+ <tr>
+    <td>
+        <p style="font-weight: bold">Site:</p>
+        <p style="font-weight: bold">Dev:</p>
+        <p style="font-weight: bold">Twitter:</p>
+        <p style="font-weight: bold">Github:</p>
+        <p style="font-weight: bold">Codepen:</p>
+    </td>
+    <td>
+        <p><a href="http://renestep.com/">renestep.com</a></p>
+        <p><a href="https://dev.to/stories_of_ren">@stories_of_ren</a></p>
+        <p><a href="https://twitter.com/stories_of_ren">@stories_of_ren</a></p>
+        <p><a href="https://github.com/nrenc027">nrenc027</a></p>
+        <p><a href="https://codepen.io/ren_estep">@ren_step</a></p>
+    </td>
+    <td>
+        <p><a href="http://milufranz.com/">milufranz.com</a></p>
+        <p><a href="https://dev.to/milu_franz">@milu_franz</a></p>
+        <p><a href="https://twitter.com/milu_franz">@milu_franz</a></p>
+        <p><a href="https://github.com/milufranz08">milufranz08</a></p>
+        <p><a href="https://codepen.io/Milu5489">@Milu5489</a></p>
+    </td>
+ </tr>
+</table>
