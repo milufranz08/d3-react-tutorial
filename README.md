@@ -1,69 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# D3 + React Workshop
 
-## Available Scripts
+Data visualization is not just a graph or a chart, but the experimentation of different media to curate and display a collection of data. D3 is a powerful and flexible tool that allows you to create complex and imaginative representations. React, on the other hand, is a JavaScript library that helps you build user interfaces. D3 combined with React opens a lot of possibilities when creating an interactive web application, however, these two technologies are not easily combined as they both handle the DOM.
 
-In the project directory, you can run:
+This repository supports a free, online workshop hosted by [Imagine Dat](http://www.imagine-dat.com/) on August 22nd, 2020.
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
+## Clone and run this project
+
+Go to your terminal and use the following command to clone:
+
+`git clone git@github.com:milufranz08/d3-react-tutorial.git`
+
+A folder called **d3-react-tutorial** has been created.<br>
+Enter this directory with the following command:
+
+`cd d3-react-tutorial`
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) so you will need to install some dependencies to run it:
+
+`npm install`
+
+Run the app in development mode:
+
+`npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Branches
+This project has been structured with multiple branches so you are able to follow along during the workshop!
 
-### `npm run build`
+By default you are going to be in the `master` branch, which will contain the final product. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start following along switch to the different branches using the `git checkout` command followed by the `branch-name`.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+As an example, let's switch to **00-clean-start** branch:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`git checkout 00-clean-start`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### All branches available:
+- 00-clean-start
+- 01-generate-data-intro
+- 02-bind-data-to-svg
+- 03-add-animations-and-transitions
+- 04-responsiveness
+- 05-axes-and-scalability
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## About Imagine Dat
+This free, online workshop was hosted by [Imagine Dat](http://www.imagine-dat.com/). 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We are a group of creative visualizers of collected data! If you enjoy presenting data in a creative and impassioned way, you are in the right place. We host community events to share our work, discuss our ideas, teach others new skills, and network with other members of the tech community.
 
-## Learn More
+Subscribe to our [mailing list](http://www.imagine-dat.com/mailing_list/) to keep up with future events.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Follow us on social media
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Twitter:** [@imagine_dat_dyt](https://twitter.com/imagine_dat_dyt)
+- **IG:** [@imagine_dat_dyt](https://www.instagram.com/imagine_dat_dyt/)
 
-### Code Splitting
+### Presenters
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- #### Ren Estep
+    - **Site:** [renestep.com](http://renestep.com/)
+    - **Dev:** [@stories_of_ren](https://dev.to/stories_of_ren)
+    - **Twitter:** [@stories_of_ren](https://twitter.com/stories_of_ren)
+    - **Github:** [nrenc027](https://github.com/nrenc027)
+    - **Codepen:** []()
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# d3-react-tutorial
+- #### Milu Franz
+    - **Site:** [milufranz.com](http://milufranz.com/)
+    - **Dev:** [@milu_franz](https://dev.to/milu_franz)
+    - **Twitter:** [@milu_franz](https://twitter.com/milu_franz)
+    - **Github:** [milufranz08](https://github.com/milufranz08)
+    - **Codepen:** [@Milu5489](https://codepen.io/Milu5489)
