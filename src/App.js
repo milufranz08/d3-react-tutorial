@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { animated, useSpring } from "react-spring";
 import { generateData } from './helper';
 import './App.css';
@@ -7,8 +7,8 @@ import './App.css';
 // custom hook to watch for browser window resize
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
+  useEffect(() => {
+    const updateSize = () => {
       setSize([window.innerWidth, window.innerHeight]);
     }
     window.addEventListener('resize', updateSize);
