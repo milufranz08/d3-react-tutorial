@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { animated, useSpring } from "react-spring";
 import { generateData } from './helper';
 import './App.css';
 
-// custom hook to watch for browser window resize
+// custom hook to watch for browser window resize :)
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
   useEffect(() => {
@@ -21,7 +21,6 @@ const useWindowSize = () => {
 function App() {
   const [data, setData] = useState();
   const [isAnimated, setIsAnimated] = useState(false);
-  const ref = useRef();
   const [width, height] = useWindowSize();
 
   useEffect(() => {
@@ -47,7 +46,7 @@ function App() {
   });
 
   return (
-    <div className="App" ref={ref}>
+    <div className="App">
       { width && height && data && (
         <svg 
           viewBox={`0 0 ${width} ${height}`}
